@@ -1,0 +1,162 @@
+/*
+BASIC STYLING
+https://developer.mozilla.org/en-US/docs/Web/CSS/length
+https://developer.mozilla.org/en-US/docs/Web/CSS/gradient
+https://developer.mozilla.org/en-US/docs/Web/CSS/color
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+ */
+
+* {
+  /*
+  Prevent padding and border width values from expanding
+  and possibly breaking layout containers as we add
+  more content to the page. 
+  The box-sizing property modifies the box model. 
+  The border-box keyword forces padding and borders into 
+  width and height of elements instead of expanding them.
+  */
+  box-sizing: border-box;
+}
+
+body {
+/* We want our elements to stretch to the bounds of the screen */
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* reset ul */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-size: .95em;
+  margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+  color: #377C7C;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0B4F4F;
+}
+
+/* Get our headers closer to previous element */
+h2,
+h3 {
+  margin-top: 0;
+}
+
+/* Make sure images fit the screen */
+img {
+  max-width: 100%;
+}
+
+/*
+BASIC LAYOUT
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+https://developer.mozilla.org/en-US/docs/Web/CSS/display
+ */
+
+ .col {
+  padding-left: 1rem;
+  padding-right: 1rem;
+ }
+
+  /* Style header link buttons */
+.header a {
+  background: #FFF;
+  border-radius: .5rem;
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+  margin-top: 4px;
+}
+
+  /* Our name in the header */
+.home {
+  font-size: 1.25em;
+}
+
+.banner {
+  padding: 1rem 0;
+  margin-bottom: 60px;
+}
+
+.footer {
+  padding: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.prim-bground {
+  background: #CBE98F;
+}
+
+.logo {
+  width: 200px;
+}
+
+/*
+MEDIA QUERIES
+https://developer.mozilla.org/en-US/docs/Web/CSS/@media
+ */
+
+/* 
+medium screen -- this media query affects viewports
+with a width of 769 pixels or more
+*/
+@media (min-width: 769px) {
+  .container {
+  /* margin: 0 auto is shorthand for top and bottom margins of 0
+     and left and right margins set automatically, which centers
+     the context horizontally. */
+    margin: 0 auto;
+    width: 90%;
+    /* We don't want the layout container to get any larger
+    than 1000px on larger screens */
+    max-width: 1000px;
+  }
+
+  /* This class fixes the footer to the bottom of the viewport,
+  no matter how little content there is on the page. */
+  .footerfix {
+    /* 100vh refers to 100% of the viewport height */
+    /* 18px is the height of the footer element */
+    min-height: calc( 100vh - 68px );
+  }
+
+
+  /* YOUR CODE HERE */
+
+  /* clearfix
+  https://css-tricks.com/snippets/css/clear-fix/
+  https://developer.mozilla.org/en-US/docs/Web/CSS/float
+  https://developer.mozilla.org/en-US/docs/Web/CSS/clear
+   */
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+}
+
+
+/*
+large screen -- this media query affects viewports
+with a width of 1025 pixels or more
+ */
+
+ /* YOUR CODE HERE */
