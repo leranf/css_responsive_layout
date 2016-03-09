@@ -198,4 +198,18 @@ large screen -- this media query affects viewports
 with a width of 1025 pixels or more
  */
 
- /* YOUR CODE HERE */
+@media (min-width: 1025px) {
+  .container {
+    width: 80%;
+    max-width: 1150px;
+  }
+
+  .primary {
+    width: 40%;
+  }
+
+  .secondary,
+  .tertiary {
+    width: 30%;
+  }
+}
