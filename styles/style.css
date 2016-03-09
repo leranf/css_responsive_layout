@@ -72,6 +72,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/display
   padding-right: 1rem;
  }
 
+ /* This selector handles our collapsing margins in the header
+by providing padding. Another option to stop collapsing margins
+is to add a border, or remove the margin of the larger
+element. */
+.header {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
   /* Style header link buttons */
 .header a {
   background: #FFF;
@@ -84,6 +93,9 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/display
 
   /* Our name in the header */
 .home {
+  /* This also fixes collapsing margins by removing the margin of
+  the larger element */
+  margin: 0;
   font-size: 1.25em;
 }
 
