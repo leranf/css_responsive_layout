@@ -69,10 +69,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
 https://developer.mozilla.org/en-US/docs/Web/CSS/display
  */
 
- .col {
+.col {
   padding-left: 1rem;
   padding-right: 1rem;
- }
+}
 
  /* This selector handles our collapsing margins in the header
 by providing padding. Another option to stop collapsing margins
@@ -81,6 +81,26 @@ element. */
 .header {
   padding-top: .5em;
   padding-bottom: .5em;
+}
+
+#cultivars ul,
+#cultivars li {
+  margin-bottom: 1rem;
+}
+
+
+/* Some neat things we can do with pseudo-classes */
+.cultivar-name {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.cultivar-name:after {
+  content: ':';
+}
+
+.cultivar-name:first-letter {
+  font-size: 1.5em;
 }
 
   /* Style header link buttons */
