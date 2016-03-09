@@ -150,7 +150,15 @@ with a width of 769 pixels or more
   }
 
 
-  /* YOUR CODE HERE */
+
+  .col {
+    float: left;
+  }
+
+  .primary,
+  .secondary {
+    width: 50%;
+  }
 
   /* clearfix
   https://css-tricks.com/snippets/css/clear-fix/
