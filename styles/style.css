@@ -170,6 +170,15 @@ with a width of 769 pixels or more
     width: 50%;
   }
 
+  /* We want some text to be larger on larger screens */
+  .headline {
+    font-size: 2.5em;
+  }
+
+  .tagline {
+    font-size: 1.5em;
+  }
+
   /* clearfix
   https://css-tricks.com/snippets/css/clear-fix/
   https://developer.mozilla.org/en-US/docs/Web/CSS/float
