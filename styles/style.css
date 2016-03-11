@@ -102,6 +102,8 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/display
 
 .prim-bground {
   background: #CBE98F;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 .logo {
@@ -135,6 +137,15 @@ with a width of 769 pixels or more
     /* 100vh refers to 100% of the viewport height */
     /* 18px is the height of the footer element */
     min-height: calc( 100vh - 68px );
+  }
+
+  .col {
+    float: left;
+  }
+
+  .primary,
+  .secondary {
+    width: 50%;
   }
 
 
